@@ -1,3 +1,1 @@
-# Counter
-
-A Counter app built with HTML, CSS, JavaScript
+# Java Script mini projects and games for practice
