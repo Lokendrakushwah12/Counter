@@ -81,7 +81,14 @@ button:hover,
 #save-btn:hover {
     color: rgb(245, 245, 245);
 }
-
+.btn-back{
+    position: absolute;
+    left: 1%;
+    top:1%;
+    animation: slideUp 0.6s ease-in-out 0s;
+    fill: hsl(206, 100%, 50%);
+    transition: all .25s ease-in-out;
+}
 #increment-btn {
     background: rgb(50, 50, 50);
 }
