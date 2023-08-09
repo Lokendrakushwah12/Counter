@@ -23,7 +23,7 @@ btn.forEach(function (e) {
             back[0].style.fill = "hsl(102, 92%, 38%)";
         }
         if (ev.target.id == "color4-btn") {
-            body.style.backgroundImage = "url(bg.svg)";
+            body.style.backgroundImage = "url(blue.svg)";
             h1.style.backgroundImage = "var(--blue)";
             back[0].style.fill = "hsl(206, 100%, 50%)";
         }
