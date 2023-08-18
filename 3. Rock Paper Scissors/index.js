@@ -24,31 +24,31 @@ function generateComputerChoice() {
 
 function getResult() {
     result.classList.remove("visible");
-    if (userChoice === computerChoice) {
+    if (userChoice.innerHTML === computerChoice.innerHTML) {
         // draw
         result.innerHTML = "Draw!!";
     }
-    if (userChoice === "Rock" && computerChoice === "Scissors") {
+    if (userChoice.innerHTML === "Rock" && computerChoice.innerHTML === "Scissors") {
         // win
         result.innerHTML = "You Win!!";
     }
-    if (userChoice === "Paper" && computerChoice === "Rock") {
+    if (userChoice.innerHTML === "Paper" && computerChoice.innerHTML === "Rock") {
         // win
         result.innerHTML = "You Win!!";
     }
-    if (userChoice === "Scissors" && computerChoice === "Paper") {
+    if (userChoice.innerHTML === "Scissors" && computerChoice.innerHTML === "Paper") {
         // win
         result.innerHTML = "You Win!!";
     }
-    if (userChoice === "Rock" && computerChoice === "Paper") {
+    if (userChoice.innerHTML === "Rock" && computerChoice.innerHTML === "Paper") {
         // Lost
         result.innerHTML = "You Lost!!";
     }
-    if (userChoice === "Paper" && computerChoice === "Scissors") {
+    if (userChoice.innerHTML === "Paper" && computerChoice.innerHTML === "Scissors") {
         // Lost
         result.innerHTML = "You Lost!!";
     }
-    if (userChoice === "Scissors" && computerChoice === "Rock") {
+    if (userChoice.innerHTML === "Scissors" && computerChoice.innerHTML === "Rock") {
         // Lost
         result.innerHTML = "You Lost!!";
     }
