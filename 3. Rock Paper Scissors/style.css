@@ -64,7 +64,8 @@ h3 {
     /* display: inline; */
 }
 
-.btn {
+.btn,
+.btn1 {
     animation: slideUp 0.6s ease-in-out 0.04s;
     padding: 8px 16px;
     white-space: nowrap;
@@ -96,7 +97,9 @@ h2 {
     border: 2px solid #0c49c4a8;
     transition: all 0.25s;
 }
-
+.visible{
+    display: none;
+}
 .choice {
     display: flex;
     width: 80%;
