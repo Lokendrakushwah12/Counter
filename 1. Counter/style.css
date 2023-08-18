@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 body {
     background-image: url("bg.svg");
     background-size: 100%;
-    font-family: Inter,space grotesk;
+    font-family: Inter, space grotesk;
     text-align: center;
 }
 
@@ -46,7 +48,7 @@ h1 {
 }
 
 h2 {
-    
+
     animation: slideUp 0.6s ease-in-out 0.02s;
     font-size: 50px;
     margin-top: 0;
@@ -55,7 +57,7 @@ h2 {
 }
 
 p {
-    
+
     animation: slideUp 0.6s ease-in-out 0.06s;
     color: rgb(50, 50, 50);
     font-weight: 600;
@@ -63,7 +65,7 @@ p {
 }
 
 button {
-    
+
     animation: slideUp 0.6s ease-in-out 0.04s;
     border: none;
     padding-top: 7px;
@@ -82,18 +84,21 @@ button:hover,
 #save-btn:hover {
     color: rgb(245, 245, 245);
 }
-.btn-back{
+
+.btn-back {
     position: absolute;
     left: 1%;
-    top:1%;
+    top: 1%;
     animation: slideUp 0.6s ease-in-out 0s;
     fill: #0c49c4;
     transition: all .25s ease-in-out;
 }
+
 .btn-back:hover {
     scale: 1.125;
     transition: all .25s ease-in-out;
 }
+
 #increment-btn {
     background: rgb(50, 50, 50);
 }

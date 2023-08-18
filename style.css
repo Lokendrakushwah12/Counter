@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 body {
     background-image: url("bg.svg");
     background-size: 100%;
-    font-family: Inter,space grotesk;
+    font-family: space grotesk;
     text-align: center;
 }
 

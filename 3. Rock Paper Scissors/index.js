@@ -2,6 +2,10 @@ const computerChoice = document.getElementById("computer-choice");
 const userChoice = document.getElementById("user-choice");
 const result = document.getElementById("result");
 const possibleChoices = document.querySelectorAll(".btn");
+// sound
+const win = new Audio("./win.mp3");
+const lost = new Audio("./lost.mp3");
+const draw = new Audio("./Draw.mp3");
 
 possibleChoices.forEach(el => el.addEventListener("click", (e) => {
     userChoice.innerHTML = e.target.outerText;
@@ -51,5 +55,14 @@ function getResult() {
     if (userChoice.innerHTML === "Scissors" && computerChoice.innerHTML === "Rock") {
         // Lost
         result.innerHTML = "You Lost!!";
+    }
+    if(result.innerHTML === "You Lost!!"){
+        lost.play();
+    }
+    if(result.innerHTML === "You Win!!"){
+        win.play();
+    }
+    if(result.innerHTML === "Draw!!"){
+        draw.play();
     }
 }

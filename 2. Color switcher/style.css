@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 body {
     background-image: url("bg.svg");
     background-size: 100%;
-    font-family: Inter,space grotesk;
+    font-family: Inter, space grotesk;
     text-align: center;
 }
-:root{
+
+:root {
     --red: linear-gradient(45deg, hsl(0, 100%, 50%), hsl(0, 100%, 88%));
     --yellow: linear-gradient(45deg, hsl(52, 100%, 50%), hsl(52, 100%, 88%));
     --green: linear-gradient(45deg, hsl(102, 92%, 38%), hsl(102, 92%, 88%));
     --blue: linear-gradient(45deg, hsl(206, 100%, 50%), hsl(206, 100%, 88%));
     --white: linear-gradient(45deg, hsl(0, 0%, 59%), hsl(0, 0%, 93%));
 }
+
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -36,7 +40,8 @@ body {
     border: 3px solid #0000000e;
     backdrop-filter: blur(7.5px); */
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -61,20 +66,23 @@ button {
     box-shadow: 0px 10px 20px 0px rgba(34, 44, 49, 0.1);
     transition: all .25s ease-in-out;
 }
-.color{
+
+.color {
     display: flex;
     flex-direction: row;
     padding-top: 100px;
     gap: 20px;
 }
-.btn-back{
+
+.btn-back {
     position: absolute;
     left: 1%;
-    top:1%;
+    top: 1%;
     animation: slideUp 0.6s ease-in-out 0s;
     fill: #0c49c4;
     transition: all .25s ease-in-out;
 }
+
 button:hover,
 .btn-back:hover {
     scale: 1.125;
@@ -84,15 +92,19 @@ button:hover,
 #color1-btn {
     background: rgb(255, 0, 0);
 }
+
 #color2-btn {
     background: rgb(255, 221, 0);
 }
+
 #color3-btn {
     background: rgb(62, 186, 8);
 }
+
 #color4-btn {
     background: rgb(0, 145, 255);
 }
+
 #color5-btn {
     background: rgb(150, 150, 150);
 }
