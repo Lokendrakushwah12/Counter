@@ -16,8 +16,19 @@ body{
     align-items: center;
     background-color: #1f1f1f;
 }
+.btn-back {
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    animation: slideUp 0.6s ease-in-out 0s;
+    fill: cornflowerblue;
+    transition: all .25s ease-in-out;
+}
 
-
+.btn-back:hover {
+    scale: 1.125;
+    transition: all .25s ease-in-out;
+}
 #content{
     max-width: 90%;
     min-width: 30%;
