@@ -8,7 +8,7 @@
     font-weight: 300;
 }
 .btn-back {
-    position: absolute;
+    /* position: absolute; */
     left: 1%;
     top: 1%;
     animation: slideUp 0.6s ease-in-out 0s;
@@ -24,8 +24,97 @@ body{
     width: 100%;
     height: 100vh;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    background-color: #1f1f1f;
+    background-color: hsl(0, 0%, 8%);
 }
 
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    background-color: hsl(0, 0%, 12%);
+
+}
+
+.header h1{
+    width: 100%;
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 400;
+    left: 100%;
+    /* transform: translateX(-290%); */
+}
+
+.search-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding: 0px 24px;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.search-part h3{
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: rgba(240, 248, 255, 0.75);
+}
+.search-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input {
+    width: 100%;
+    padding: 12px 28px;
+    margin: 5px;     /* Margin around the input field */
+    border-radius: 999px;          /* Rounded corners */
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 85%);
+    font-size: 1rem;
+}
+input:focus {
+    border: none;
+    border-radius: none;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color: hsl(0, 0%, 50%);
+}
+
+input:hover, button:hover {
+    color: hsl(0, 0%, 85%);
+    background-color: hsl(0, 0%, 15%);
+}
+input[type="search"]::-webkit-search-cancel-button {
+    /* Your CSS styles for the clear (cross) symbol go here */
+    color: red; /* Change the color to red */
+    background-color:red;
+    font-size: 20px; /* Adjust the font size */
+    /* Add other styles as needed */
+}
+button{
+    border: none;
+    font-size: 1.125rem;
+    height: 40px;
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    cursor: pointer;
+    color: hsl(0, 0%, 75%);
+    background-color: hsl(0, 0%, 15%);
+}

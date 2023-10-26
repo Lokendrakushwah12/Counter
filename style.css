@@ -95,3 +95,8 @@ a:hover {
     align-items: center;
     gap: 30px;
 }
+
+.work{
+    display: flex;
+    gap: 32px;
+}
