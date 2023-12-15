@@ -9,7 +9,6 @@ let gameOver = false;
 
 // sound
 const win = new Audio("./win.mp3");
-const lost = new Audio("./lost.mp3");
 const draw = new Audio("./Draw.mp3");
 
 function checkWinner(){
@@ -30,22 +29,22 @@ function checkWinner(){
     else if (box4 != "" && box4 == box5 && box5 == box6) {
         gameOver = true;
         turn.innerHTML = box4 + " Won 🎉";
-        win
+        win.play();
     }
     else if (box7 != "" && box7 == box8 && box8 == box9) {
         gameOver = true;
         turn.innerHTML = box7 + " Won 🎉";
-        win
+        win.play();
     }
     else if (box1 != "" && box1 == box4 && box4 == box7) {
         gameOver = true;
         turn.innerHTML = box1 + " Won 🎉";
-        win
+        win.play();
     }
     else if (box2 != "" && box2 == box5 && box5 == box8) {
         gameOver = true;
         turn.innerHTML = box2 + " Won 🎉";
-        win
+        win.play();
     }
     else if (box3 != "" && box3 == box6 && box6 == box9) {
         gameOver = true;
@@ -54,12 +53,12 @@ function checkWinner(){
     else if (box1 != "" && box1 == box5 && box5 == box9) {
         gameOver = true;
         turn.innerHTML = box1 + " Won 🎉";
-        win
+        win.play();
     }
     else if (box3 != "" && box3 == box5 && box5 == box7) {
         gameOver = true;
         turn.innerHTML = box3 + " Won 🎉";
-        win
+        win.play();
     }
     else if (count == 9) {
         gameOver = true;
